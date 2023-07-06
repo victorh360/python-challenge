@@ -7,7 +7,9 @@ with open(csvpath) as budget_data:
     
     #read csv file
     csvreader = csv.reader(budget_data, delimiter=',')
-    next(csvreader)   
+    
+    #set header row
+    csv_header = next(csvreader)  
 
     #make blank list for months
     months = []
