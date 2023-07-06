@@ -11,7 +11,7 @@ with open(csvpath) as election_data:
     vote_total = 0
     
     candidate_list = []
-
+    votes = {}
     
     for row in csvreader:
         
@@ -24,7 +24,10 @@ with open(csvpath) as election_data:
 
             candidate_list.append(name)
 
+            votes[name] = 0
+        
+        votes[name] += 1
 
+    print(votes{1})
 
-
-    
+#with open('PyPoll\Analysis\Analysis.txt', "w") as f:
